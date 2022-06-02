@@ -1,0 +1,9 @@
+Elastic Search Issue on Valet+ Mac.
+If you are trying to install Elastic Search but you are unable to run it on your mac with valet+ then try the following Solution
+brew tap elastic/tap
+brew install elastic/tap/elasticsearch-full
+Note: If you face any error then run the following commands
+brew unlink elasticsearch
+brew install elastic/tap/elasticsearch-full
+brew services start elasticsearch-full
+curl localhost:9200
